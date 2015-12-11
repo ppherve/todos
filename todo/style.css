@@ -1,0 +1,59 @@
+
+body {
+	
+  background-color:#fbe9e7;
+  margin: 0 auto; 
+  width:500px;
+   
+}
+
+
+h1{
+
+	font-family:"New Century Schoolbook", "serif";
+	font-size: 50px;font-style:italic;
+	text-align: center;
+
+}
+
+input[type="text"]{
+	width:100%;
+	padding-left:0px ;
+	margin-right:0px;
+	border-left:0px ;
+	border-right:0px;
+	line-height: 50px;
+
+}
+
+
+ul{
+	list-style: none;
+	padding-left:0;
+}
+
+#main{ 
+   
+   background-color:#e1f5fe;
+  
+}	
+
+
+#liste li{
+	background-color: #ffff8d;
+	margin:10px;
+	line-height: 50px;
+
+}
+
+
+.fait{
+	text-decoration:line-through;
+
+}
+
+
+#nav li {
+	display: inline;
+	margin: 20px;
+}

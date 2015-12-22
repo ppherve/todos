@@ -1,45 +1,62 @@
 <!doctype html>
 <html lang="fr">
-<head>
-	<link rel="stylesheet" href="style.css">
- 	<meta charset="utf-8">
- 	<title>premier projet</title>
- 
-	<script type="text/javascript" src="jquery-2.1.4.js"></script>
-	<script type="text/javascript" src="app.js"></script>
-</head>
-<body>
+	<!-- Indenter ! -->
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+	 	<meta charset="utf-8">
 
-	<div id="main">
-		<h1>to go liste</h1>
-			<form>			
-				<input type="text" id="note" name="message" placeholder="what need to be done?">
-			</form>
-
-
-		<ul id="liste">
-			<li><input type="checkbox">reviser</li>
-			<li><input type="checkbox">revoir js</li>
-			<li><input type="checkbox">html</li>
-			<li class="fait"><input type="checkbox">la vaisselle</li>
+	 	<!-- Le titre ne me donne pas envie de continuer. -->
+	 	<title>premier projet</title>
+	 
+	 	<!-- Déplacement du Js en fin de page pour optimiser le 
+	 	chargemetn de la page. -->
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</head>
+	<body>
+<!-- 		Sinon, le code est propre. -->
+		<div id="main">
+			<h1>to go liste</h1>
+				<form>			
+					<input type="text" id="note" name="message" placeholder="what need to be done?">
+				</form>
 
 
-		</ul>
+			<ul id="liste">
+				<li><input type="checkbox">reviser</li>
+				<li><input type="checkbox">revoir js</li>
+				<li><input type="checkbox">html</li>
+				<li class="fait"><input type="checkbox">la vaisselle</li>
+			</ul>
 
-		<ul id="nav">
+			<ul id="nav">
 
-			<li>4 items left</li>
+				<li>4 items left</li>
+<!-- 				N'hésite pas à aller à la ligne à chaque nouvel élément Htmlt :
+				c'est plus claire et plus lisible. -->
+				<li>
+<!-- 					Les ancres '<a>' ne sont pas indispensables puisque dans ce cas
+					cela ne redirige pas vers une autre page.
+					Ce sont des boutons dont les clicks ont des conséquences sur la
+					page courante. -->
+					<button>
+						all
+					</button>
+				</li>
 
-			<li><button><a href="#">all</a></button></li>
+				<li><button>
+						active
+					</button>
+				</li>
 
-			<li><button><a href="#">active</a></button></li>
+				<li>
+					<button>
+						completed
+					</button>
+				</li>
 
-			<li><button><a href="#">completed</a></button></li>
-
-		</ul>
-
-
-	</div>
-
-
-</body>
+			</ul>
+		</div>
+	</body>
+	<!-- AH ! Le Html n'est pas fermé ! C'est la porte ouverte au mauvais référencement ! -->
+</html>
